@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="header" >
+
+    </div>
+	<div class="main">
+
+        <input type="text" id="equations" placeholder="Enter your equation">
+        <button onclick="algebra_calculation.analyse_equation()">Submit</button>
+
+        
+        <p class="title"> Matrix Calculator</p>
+        
+        <p>Choose martrix's dimension</p>
+        <select id="dimension" name="matrix_dimension" >
+            <option value="2" selected >2</option>
+            <option value="3">3</option>
+        </select>
+        <button onclick="matrix_cal.change_dimension()" class="submit_dimension">Change Dimension</button>
+
+        <div id="matrix_input">
+            
+        </div>
+
+        <button onclick="matrix_cal.calculate()">Calculate</button>
+        <div id="matrix_output">
+
+        </div>
+    </div>
+  </body>
+</html>
